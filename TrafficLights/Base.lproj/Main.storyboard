@@ -51,13 +51,16 @@
                                 <rect key="frame" x="107" y="780" width="200" height="42"/>
                                 <color key="backgroundColor" red="0.42491183380000003" green="0.2923240909" blue="0.39457803429999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="ezE-4W-hJ5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ezE-4W-hJ5"/>
                                     <constraint firstAttribute="height" constant="42" id="gKA-cR-d1z"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.90980392160000001" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQq-IL-DOw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -69,6 +72,12 @@
                             <constraint firstItem="ndg-pP-tuI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="ueX-At-NR4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonStart" destination="HHI-4e-M6r" id="fGx-rK-M3C"/>
+                        <outlet property="greenLight" destination="CKd-h0-WCz" id="QwC-Ix-lMk"/>
+                        <outlet property="redLight" destination="zvu-Dz-xk2" id="Ici-Re-IWa"/>
+                        <outlet property="yellowLight" destination="Mo7-zO-JG8" id="Zdf-5C-E5X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
