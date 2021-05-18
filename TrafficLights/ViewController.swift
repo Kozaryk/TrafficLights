@@ -50,6 +50,7 @@ class ViewController: UIViewController {
         switch index {
         case 0:
             redLight.alpha = 1
+            greenLight.alpha = 0.3
             print("red light \(index)")
         case 1:
             redLight.alpha = 0.3
@@ -59,20 +60,16 @@ class ViewController: UIViewController {
             yellowLight.alpha = 0.3
             greenLight.alpha = 1
             print("green Light \(index)")
-        case 3 :
-            redLight.alpha = 0.3
-            yellowLight.alpha = 0.3
-            greenLight.alpha = 0.3
+            index = -1
+            
         default:
             redLight.alpha = 0.3
             yellowLight.alpha = 0.3
             greenLight.alpha = 0.3
+            index = 0
         }
         self.index += 1
-        if index == 4{
-            index = 0
-            buttonStart.setTitle("Start", for: .normal)
-        }
+        
 
         
     }
